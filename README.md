@@ -1,8 +1,7 @@
 
 # Portfólio do desenvolvedor
 
-Trabalho feito para estudo![01](https://user-images.githubusercontent.com/79487813/120125521-8b827980-c18f-11eb-8407-3edd73ed1874.jpg)
- na resposividade,
+Trabalho feito para estudo na resposividade,
  HTML, CSS & JavaScript.
 
 > Status: Em desenvolvimento ⚠️
@@ -17,5 +16,7 @@ O controle das tarefas desse projeto será realizado no GitHub
  -:up: atualização
  -:beetle: correção de bug
  -:checkered_flag: release
+ 
+ ![01](https://user-images.githubusercontent.com/79487813/120125521-8b827980-c18f-11eb-8407-3edd73ed1874.jpg)
  
  
