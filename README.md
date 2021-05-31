@@ -1,7 +1,8 @@
 
 # Portfólio do desenvolvedor
 
-Trabalho feito com intuito de aprimoramento na resposividade,
+Trabalho feito para estudo![01](https://user-images.githubusercontent.com/79487813/120125521-8b827980-c18f-11eb-8407-3edd73ed1874.jpg)
+ na resposividade,
  HTML, CSS & JavaScript.
 
 > Status: Em desenvolvimento ⚠️
