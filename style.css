@@ -306,11 +306,15 @@ img {
 }
 
 .brands {
-
+  margin-top: 100px;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
 }
 
 .brands span {
-  color: var(--font);
-  display: inline-block;
-  font-size: 3rem;
+  color: var(--font); 
+  text-align: center;
+  font-size: 4rem;
+  margin: .1rem 0rem;
 }
