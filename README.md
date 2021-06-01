@@ -19,6 +19,5 @@ O controle das tarefas desse projeto será realizado no GitHub
  
  ![01](https://user-images.githubusercontent.com/79487813/120125521-8b827980-c18f-11eb-8407-3edd73ed1874.jpg)
  
- # https://paulodiastst.github.io/portfolio-personal/
  
  
