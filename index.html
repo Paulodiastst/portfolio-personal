@@ -14,34 +14,42 @@
 </head>
 <body>
   <div class="wrapper">
+    <input type="checkbox" id="menu-toggle">
     <header> <!-- Menu - Social - Contato -->
       <h3>Developer <small>2.0</small></h3>
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Sobre</a></li>
-        <li><a href="">Portfólio</a></li>
-        <li><a href="">Serviços</a></li>
-        <li>
-          <a href="">
-          <span class="las la-search"></span>
-        </a>
-      </li>
-        <li>
-          <a href="">
-          <span class="lab la-twitter"></span>
-        </a>
-      </li>
-        <li>
-          <a href="">
-          <span class="lab la-instagram"></span>
-        </a>
-      </li>
-      <li><a href="">
-          <span class="las la-sms"></span>
-          contato
-        </a>
-      </li>
-      </ul>      
+      <div class="main-menu">
+        <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="">Sobre</a></li>
+              <li><a href="">Portfólio</a></li>
+              <li><a href="">Serviços</a></li>
+              <li class="hide-sm">
+                <a href="">
+                <span class="las la-search"></span>
+              </a>
+            </li>
+              <li class="hide-sm">
+                <a href="">
+                <span class="lab la-twitter"></span>
+              </a>
+            </li>
+              <li class="hide-sm">
+                <a href="">
+                <span class="lab la-instagram"></span>
+              </a>
+            </li>
+            <li><a href="">
+                <span class="las la-sms"></span>
+                contato
+              </a>
+            </li>
+        </ul>
+    </div>
+    
+    <label for="menu-toggle">
+      <span class="las la-bars"></span>
+    </label>
+    
     </header> <!-- End Menu - Social - Contato -->
 
     <div class="hero"> <!-- Apresentação -->
@@ -121,7 +129,7 @@
         </div>
         <div class="portfolio-wrapper">
           <div class="bg-wrap left"></div>
-          <div class="bg-wrap right"></div>
+          <div class="bg-wrap right" id="bg-right"></div>
           <div class="portfolio">
             <h3>Visual Art</h3>
             <small>Uma criação impressionante para uma empresa criativa.</small>
@@ -280,82 +288,87 @@
         </div>
 
         <footer>
-          <div class="footer-grid">
-            <div class="Sobre">
-              <h3>Sobre</h3>
-              <small>Autêntico e inovador. Bult para o menor detalhe com foco, usabilidade e performace.</small>
+          <div class="wrapper">
+            <div class="footer-grid">
+              <div class="sobre">
+                <h3>Sobre</h3>
+                <small>Autêntico e inovador. Pronto para o menor detalhe com foco, usabilidade e performace.</small>
 
-              <div class="social">
-                <span class="lab la-instagram"></span>
-                <span class="lab la-facebook"></span>
-                <span class="lab la-linkedin"></span>
-                <span class="lab la-twitter"></pan>                 
+                <div class="socials">
+                  <span class="lab la-instagram"></span>
+                  <span class="lab la-facebook"></span>
+                  <span class="lab la-linkedin"></span>
+                  <span class="lab la-twitter"></pan>                 
+                </div>
+              </div>
+              <div class="links">
+                <h3>Entre em contato</h3>                
+                <ul>
+                  <li>
+                    <span class="las la-phone"></span>
+                    +(22) 99872-4205
+                  </li>
+                  <li>
+                    <span class="las la-envelope"></span>
+                    example@gmail.com
+                  </li>
+                  <li>
+                    <span class="las la-marker"></span>
+                    Rua Machado de Assis, 63
+                  </li>
+                </ul>  
+                
+                <button class="btn"><span class="las la-sms"></span>Envie uma mensagem</button>
+                
+              </div>
+
+              <div class="Links">
+                <h3>Nossos Serviços</h3>
+                
+                <ul>
+                  <li>
+                    Desenvolvimento de sites
+                  </li>
+                  <li>
+                    Aplicações de construção
+                  </li>
+                  <li>
+                    Seo & maketing digital
+                  </li>
+                  <li>
+                    Marca e identidade
+                  </li>
+                  <li>
+                    Digital images & videos
+                  </li>
+                </ul>
+              </div>
+              <div class="Links">
+                <h3>Links Rápidos</h3>                
+                <ul>
+                  <li>
+                    <a href="">Home</a>
+                  </li>                  
+                  <li>
+                    <a href="">Serviços</a>
+                  </li>                  
+                  <li>
+                    <a href="">Portfólio</a>
+                  </li>                  
+                  <li>
+                    <a href="">Contato</a>
+                  </li>                  
+                </ul>
               </div>
             </div>
-            <div class="Links">
-              <h3>Entre em contato</h3>
-              
-              <ul>
-                <li>
-                  <span class="las la-phone"></span>
-                  +(22) 99872-4205
-                </li>
-                <li>
-                  <span class="las la-envelope"></span>
-                  example@gmail.com
-                </li>
-                <li>
-                  <span class="las la-marker"></span>
-                  Rua Machado de Assis, 63
-                </li>
-              </ul>  
-              
-              <button class="btn"><span class="las la-sms"></span>Envie uma mensagem</button>
-              
-            </div>
-
-            <div class="Links">
-              <h3>Nossos Serviços</h3>
-              
-              <ul>
-                <li>
-                  Sesenvolvimento de seites
-                </li>
-                <li>
-                  Aplicações de construção
-                </li>
-                <li>
-                  Seo & maketing digital
-                </li>
-                <li>
-                  Marca e identidade
-                </li>
-                <li>
-                  Digital images & videos
-                </li>
-              </ul>
-            </div>
-            <div class="Links">
-              <h3>Links Rápidos</h3>
-              
-              <ul>
-                <li>
-                  <a href="">Home</a>
-                </li>                  
-                <li>
-                  <a href="">Serviços</a>
-                </li>                  
-                <li>
-                  <a href="">Portfólio</a>
-                </li>                  
-                <li>
-                  <a href="">Contato</a>
-                </li>                  
-              </ul>
-            </div>
-
           </div>
         </footer>
+
+        <div class="wrapper">
+          <div class="copyright">
+            <p>&copy; Sobre a empresa 2021. Todos os direitos reservados</p>
+          </div>
+        </div>
       
       <script type="text/javascript">
         $(function(){

@@ -22,7 +22,13 @@ a {
 
 body {
   background: var(--bg);
+  position: relative;
 }
+
+#menu-toggle {
+  display: none;
+}
+
 
 .wrapper {
   width: 72%;
@@ -77,6 +83,18 @@ header li:last-child a {
 
 header li:last-child a span {
   margin-right: .4rem;
+}
+
+header label {
+  font-size: 1.4rem;
+  color: var(--main);
+  border: 2px solid var(--main);
+  height: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 3px;
+  display: none;
 }
 
 .hero {
@@ -310,12 +328,14 @@ img {
  display: flex;
  flex-wrap: wrap;
  margin: 3rem 0rem;
+ flex-wrap: wrap;
 }
 
 .brands span {
   color: var(--font);   
   font-size: 4rem;
   margin: auto;
+  margin-bottom: .5rem;
 }
 
 
@@ -331,6 +351,7 @@ img {
   grid-template-columns: 55% 40%;
   grid-gap: 3rem;
   align-items: center;
+  padding-bottom: 2rem;
 }
 
 .form-title h2 {
@@ -421,7 +442,179 @@ img {
 
 footer {
   background: var(--bg-accent);
+  color: #fff;
+  padding: 3.7rem 0rem;
 }
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2.5rem;
+}
+
+.sobre h3 {
+  font-size: 2.2rem;
+  color: var(--main);
+  font-weight: 600;
+}
+
+.sobre small {
+  display: inline-block;
+  margin: 1rem 0rem;
+  line-height: 1.5rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials span {
+  font-size: 1.7rem;
+  color: var(--main);
+}
+
+.links h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+.links ul {
+  margin-bottom: 1.5rem;
+}
+
+.links li {
+  margin-bottom: .5rem;
+  font-size: .85rem;
+}
+
+.links li span {
+  color: var(--main);
+  font-size: 1.3rem;
+}
+
+links button {
+  border: 3px solid var(--main);
+  background: transparent;
+  color: var(--font);
+  padding: .5rem 1rem;
+}
+
+.copyright {
+  padding: 1rem 0rem;
+  text-align: right;
+  color: var(--font);
+  font-size: .8rem;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 845px) {
+  header label {    
+    display: grid;
+  }
+
+  .main-menu {
+    position: absolute;
+    top: -100%;
+    background: var(--bg-accent);
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 1.5rem 0rem;
+    transition: top 300ms;
+  }
+
+  #menu-toggle:checked ~ header .main-menu {
+    top: 70px;
+  }
+
+  header ul {
+    display: block;
+    width: 90%;
+    margin: auto;
+  }
+
+  header li {
+    margin: 0;
+    margin-bottom: .8rem;
+  }
+
+  header li:last-child {
+    margin-top: 1rem;
+  }
+
+  header li.hide-sm {
+    display: none;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+  .hero img {
+    display: none;
+  }
+
+  .portfolio-wrapper, .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #bg-right {
+    bottom: -10px;
+    left: -10px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 100%;
+  }
+
+  .contact-img {
+    display: none;
+  }
+
+  .skills-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skill {
+    display: grid;
+    justify-content: center;
+  }
+
+  .skill p {
+    margin-bottom: 1.5rem;
+  }
+
+}
+
+@media only screen and (max-width: 580px) {
+  .portfolio-wrapper, .services-grid {
+    grid-template-columns: 100%;
+  }
+
+  .service {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .hero {
+    min-height: 60vh;
+  }
+
+}
+
+
+
 
 
 
