@@ -4,7 +4,7 @@
 Trabalho feito para estudo na resposividade,
  HTML, CSS & JavaScript.
 
-> Status: Em desenvolvimento ⚠️
+> Status: Portfólio pronto ⚠️
 
 ## tarefas
 
